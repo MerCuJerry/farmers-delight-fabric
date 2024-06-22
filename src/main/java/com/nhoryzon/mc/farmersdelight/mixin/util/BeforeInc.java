@@ -21,7 +21,7 @@ public class BeforeInc extends InjectionPoint {
     private final Integer intValue;
 
     public BeforeInc(IMixinContext context, AnnotationNode node, String returnType) {
-        super(Annotations.<String>getValue(node, "slice", ""), Selector.DEFAULT, null);
+        super(Annotations.<String>getValue(node, "slice", ""), Specifier.DEFAULT, null);
 
         this.ordinal = Annotations.<Integer>getValue(node, "ordinal", -1);
         this.intValue = Annotations.<Integer>getValue(node, "intValue", (Integer) null);

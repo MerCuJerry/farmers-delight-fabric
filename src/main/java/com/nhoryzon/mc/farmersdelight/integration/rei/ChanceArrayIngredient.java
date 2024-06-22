@@ -2,6 +2,7 @@ package com.nhoryzon.mc.farmersdelight.integration.rei;
 
 import com.nhoryzon.mc.farmersdelight.FarmersDelightMod;
 import com.nhoryzon.mc.farmersdelight.recipe.ingredient.ChanceResult;
+import me.shedaniel.rei.api.common.entry.settings.EntryIngredientSetting;
 import me.shedaniel.rei.api.common.entry.EntryIngredient;
 import me.shedaniel.rei.api.common.entry.EntryStack;
 import me.shedaniel.rei.api.common.util.EntryStacks;
@@ -92,6 +93,16 @@ public class ChanceArrayIngredient extends AbstractList<EntryStack<?>> implement
         }
 
         return -1;
+    }
+
+    @Override
+    public <T> T getSetting(EntryIngredientSetting<T> setting){
+        return null;
+    }
+        
+    @Override
+    public <T> EntryIngredient setting(EntryIngredientSetting<T> setting, T value){
+        return this;
     }
 
     @Override

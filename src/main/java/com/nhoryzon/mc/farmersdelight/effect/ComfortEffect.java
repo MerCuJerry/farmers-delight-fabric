@@ -1,13 +1,10 @@
 package com.nhoryzon.mc.farmersdelight.effect;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.attribute.AttributeContainer;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
-
-import java.util.Set;
 
 /**
  * This effect extends the player's natural regeneration, regardless of how hungry they are.

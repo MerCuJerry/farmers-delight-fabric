@@ -64,7 +64,9 @@ processResources {
 	properties.put("fabric_version", fabric_version)
 	properties.put("minecraft_version", minecraft_version)
 
-	properties.forEach((k, v) -> inputs.property(k, v))
+	properties.forEach{ k, v -> 
+		inputs.property(k, v)
+	}
 
 	filesMatching("fabric.mod.json") {
 		expand properties
